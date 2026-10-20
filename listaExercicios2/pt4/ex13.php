@@ -16,4 +16,16 @@ echo $pequeno."<br>";
 echo $grande."<br>";
 echo $tamanho."<br>";
 
+function respostaPadrao($status,$mensagem,$data=[]){
+    $retorno = [
+        'status' => $status,
+        'mensagem'=> $mensagem,
+        'data' => $data
+    ];
+    return json_encode($retorno);
+}
+$projeto = respostaPadrao($status='ok',$mensagem='Funcionando!');
+
+echo $projeto;
+
 ?>
