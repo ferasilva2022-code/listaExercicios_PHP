@@ -5,11 +5,8 @@
 $nome = 'Fernanda';
 $idade= 18;
 $altura = 1.63;
-
 $ativo = true;
-
 $apelido= null;
-
 
 echo  'NOME: '.$nome . " | ", var_dump($nome), '<br>';
 echo  'IDADE: '.$idade .' anos | ',var_dump($idade), '<br>';
